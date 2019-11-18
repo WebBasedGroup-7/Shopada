@@ -4,7 +4,6 @@ hahaha funny
 testing testing
 <<<<<<< HEAD
 <<<<<<< HEAD
-4/5
 2+2
 
 fudge
