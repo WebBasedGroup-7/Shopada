@@ -5,7 +5,7 @@ testing testing
 <<<<<<< HEAD
 <<<<<<< HEAD
 2+2
-hihihi
+hehehe
 
 fudge
 lol
