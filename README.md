@@ -1,10 +1,4 @@
 # Shopada
-Totally not a copy of two popular e-commerce 
-hahaha funny
-testing testing
-hahahaha
+Not a copy of two popular e-commerce 
 
-fudge
-lol
-test
 
