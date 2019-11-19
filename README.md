@@ -1,3 +1,2 @@
 # Shopada
-Not a copy of two popular 
-
+Not a copy of two popular e-commerce
