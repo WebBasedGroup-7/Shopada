@@ -8,3 +8,5 @@ A website to buy things online
 1. Type http://localhost/Shopada/registration_page/registration.html in google browser
 
 User's info will be saved in the database.
+
+## Open index.html in phpmyadmin
