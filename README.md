@@ -9,4 +9,4 @@ A website to buy things online
 
 User's info will be saved in the database.
 
-## Open index.html in localhost
+## Open index.html to see homepage
