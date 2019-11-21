@@ -99,6 +99,16 @@ input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
 
+.footer .footer-content .contact-form .contact-input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 30px #272727 inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #bebdbd;
+}
+
+.footer .footer-content .contact-form .contact-input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px #1a1a1a inset;
+    -webkit-text-fill-color: #bebdbd;
+}  
+
 textarea {
   resize: none;
 }
