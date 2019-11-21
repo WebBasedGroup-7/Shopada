@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/82900df3f7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Single Post</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-text">
+          <span class="first-logo">Shop</span
+          ><span class="second-logo">ada</span>
+        </h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <!-- <li><a href="#">Sign Up</a></li> -->
+        <!-- <li><a href="#">Login</a></li> -->
+        <li>
+          <a href="#">
+            <i class="fa fa-user"></i>
+            Hafiz
+            <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+          </a>
+          <ul>
+            <li><a href="#">Dasboard</a></li>
+            <li><a href="#" class="logout">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+      <!-- Content -->
+      <div class="content clearfix">
+        <!-- Main Content -->
+        <div class="main-content">
+          <h1 class="most-popular-title">Most Popular</h1>
+
+          <div class="post">
+            <img src="images/smartphone.png" alt="" class="post-image" />
+            <div class="post-preview">
+              <h2><a href="single.html">Google Pixel</a></h2>
+              <i class="far fa-user"> Jeff</i>
+              &nbsp;
+              <i class="far calendar"> Sep 10, 2019</i>
+              <p class="preview-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+                soluta enim sunt, provident laudantium officiis.
+              </p>
+              <a href="single.html" class="btn read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- // Main Content -->
+
+        <div class="sidebar">
+          <div class="section search">
+            <h2 class="section-title">Search</h2>
+            <form action="index.html" method="post">
+              <input
+                type="text"
+                name="search-term"
+                class="text-input"
+                placeholder="Search..."
+              />
+            </form>
+          </div>
+
+          <div class="section categories">
+            <h2 class="section-title">Categories</h2>
+            <ul>
+              <li><a href="#">Mobiles</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">Earphones</a></li>
+              <li><a href="#">Smartwatches</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Dresses</a></li>
+              <li><a href="#">Hats</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- // Content -->
+    </div>
+    <!-- // Page Wrapper -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text">
+            <span class="first-logo">Shop</span
+            ><span class="second-logo">ada</span>
+          </h1>
+          <p>
+            Shopada is an online shopping store. We are a <br />
+            brand new startup in the e-commerce market and our goal is to
+            provide fast, secure and convenient online shopping experience to
+            the end user.
+          </p>
+          <div class="contact">
+            <span><i class="fas fa-phone"></i> &nbsp; 123-4567890</span>
+            <span><i class="fas fa-envelope"></i> &nbsp; info@shopada.com</span>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <br />
+          <ul>
+            <a href="#"><li>Events</li></a>
+            <a href="#"><li>Team</li></a>
+            <a href="#"><li>Mentores</li></a>
+            <a href="#"><li>Gallery</li></a>
+            <a href="#"><li>Terms and Conditions</li></a>
+          </ul>
+        </div>
+
+        <div class="footer-section contact-form">
+          <h2>Contact us</h2>
+          <br />
+          <form action="index.html" method="post">
+            <input
+              type="email"
+              name="email"
+              class="text-input contact-input"
+              placeholder="Your email address..."
+            />
+            <textarea
+              rows="4"
+              name="message"
+              class="text-input contact-input"
+              placeholder="Your message..."
+            ></textarea>
+            <button type="submit" class="btn btn-big contact-btn">
+              <i class="fas fa-envelope"></i>
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; Shopada.com | Designed by Group 7
+      </div>
+    </div>
+
+    <!-- // footer -->
+
+    <!-- JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slick Carousel -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Custom Script -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
