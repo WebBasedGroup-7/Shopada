@@ -33,6 +33,8 @@ a {
     color: white;
     border: 1px solid transparent;
     border-radius: .25rem;
+    font-size: 1.08em;
+    font-family: 'Lora', serif;
 }
 
 .btn-big {
@@ -56,6 +58,39 @@ a {
     line-height: 1.5rem;
     font-size: 1.2em;
     font-family: 'Lora', serif;
+}
+
+.msg {
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.success {
+    color: #3a6e3a;
+    border: 1px solid #3a6e3a;
+    background: #bcf5bc;  
+}
+
+.error {
+    color: #884b4b;
+    border: 1px solid #884b4b;
+    background: #f5bcbc;  
+}
+
+/* MISCELLANEOUS */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }
 
 /* NAVBAR */
@@ -335,6 +370,31 @@ header .menu-toggle {
 .content .sidebar .section.categories ul li a:hover {
     padding-left: 10px;
     transition: all 0.3s;
+}
+
+/* AUTH PAGES */
+.auth-content {
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.auth-content .form-title {
+    text-align: center;
+}
+
+.auth-content form div {
+    margin-bottom: 10px;
+}
+
+.auth-content form p {
+    text-align: center;
+}
+
+.auth-content form p a {
+    text-decoration: underline;
 }
 
 /* FOOTER */
