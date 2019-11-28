@@ -2,7 +2,7 @@
 include("../../path.php");
 include(ROOT_PATH . "/app/controllers/posts.php");
 adminOnly();
-//TODO: to be deleted
+
 $posts = getUserPosts();
 
 ?>

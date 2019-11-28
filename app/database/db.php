@@ -127,7 +127,6 @@ function getPostsByCategoryId($category_id){
     return $records;
 }
 
-//TODO: to be deleted
 function getUserPosts(){
     global $conn;
     $sql = "SELECT p.*, u.fullname FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE u.admin=?";
