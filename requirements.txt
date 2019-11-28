@@ -1,0 +1,16 @@
+Rubrics
+1. user can edit own details (only admin can edit so far)
+2. admin can view purchase records
+3. support dummy transactions
+4. display payment with professional looks mode
+5. display payment receipt or invoice, professional looks
+6. produces complete report, customisation of dashboard included (dashboard is currently empty)
+
+Assignment
+1. all password validation using javascript (currently using php) and ability to toggle to hidden
+2. user can view shopping basket/order and make payment
+3. a button to generate payment either in doc or pdf
+4. auto-send payment receipt to user's email address
+5. generate report page in dashboard design
+
+dummy transaction = (shopping basket + checkout button + payment via credit + confirmation message + store each purchase record)
