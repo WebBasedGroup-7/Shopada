@@ -36,7 +36,7 @@ if (isset($_POST['register-btn']) || isset($_POST['create-admin']) ) {
     $errors = validateUser($_POST);
 
     if (count($errors) === 0) {
-        unset($_POST['register-btn'], $_POST['passwordConf'], $_POST['create-admin']);
+        unset($_POST['passwordConf'], $_POST['create-admin']);
         $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
         
         if (isset($_POST['admin'])) {
@@ -46,6 +46,12 @@ if (isset($_POST['register-btn']) || isset($_POST['create-admin']) ) {
             $_SESSION['type'] = 'success';
             header('location:' . BASE_URL . '/admin/users/index.php');
             exit();
+        } else if(isset($_POST['register-btn'])) {
+            unset($_POST['register-btn']);
+            $_POST['admin'] = 0;
+            $user_id = create($table, $_POST);
+            $user = selectOne($table, ['id' => $user_id]);
+            loginUser($user);
         } else {
             $_POST['admin'] = 0;
             $user_id = create($table, $_POST);
@@ -55,7 +61,6 @@ if (isset($_POST['register-btn']) || isset($_POST['create-admin']) ) {
             header('location:' . BASE_URL . '/admin/users/index.php');
             exit();
         }
-        loginUser($user);
 
     } else {
         $fullname = $_POST['fullname'];
