@@ -59,7 +59,7 @@ if (isset($_POST['register-btn']) || isset($_POST['create-admin']) ) {
         $email = $_POST['email'];
         $password = $_POST['password'];
         $passwordConf = $_POST['passwordConf'];
-        $admin = $_POST['admin'] == 1 ? 1 : 0;
+        $admin = isset($_POST['admin']) ? 1 : 0;
     }
 }
 
@@ -104,7 +104,7 @@ if (isset($_POST['update-user'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
         $passwordConf = $_POST['passwordConf'];
-        $admin = $_POST['admin'] == 1 ? 1 : 0;
+        $admin = isset($_POST['admin']) ? 1 : 0;
     }
 }
 
