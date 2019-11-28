@@ -50,8 +50,12 @@ if (isset($_POST['register-btn']) || isset($_POST['create-admin']) ) {
             $_POST['admin'] = 0;
             $user_id = create($table, $_POST);
             $user = selectOne($table, ['id' => $user_id]);
-            loginUser($user);
+            $_SESSION['message'] = 'User created successfully';
+            $_SESSION['type'] = 'success';
+            header('location:' . BASE_URL . '/admin/users/index.php');
+            exit();
         }
+        loginUser($user);
 
     } else {
         $fullname = $_POST['fullname'];
